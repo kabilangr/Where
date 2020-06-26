@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/d9ce03995fb1c446-the-gallery-for-animated-smoke-effect.gif);
+    background-size: 1750px;
+
+}
+
+.heading1 {
+
+    color: rgb(235, 212, 235);
+    padding-left: 200px;
+    font-size: 50px;
+}
+
+.lvl ul {
+    position: absolute;
+    display: flex;
+    color: rgb(132, 255, 255);
+    font-weight: 600;
+    top: 15%;
+    left: 60%;
+
+}
+
+.lvl ul li {
+    padding: 10px;
+    list-style: none;
+    background-color: rgb(78, 54, 54);
+}
+
+.lvl ul:first-child {
+    padding-left: 10px;
+}
+
+.borderbox {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: rgb(139, 54, 68);
+}
+
+button {
+    background-color: silver;
+}
+
+button:hover {
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.maincontent {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 120px 120px;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px;
+    background-color: royalblue;
+}
+
+.maincontent button {
+    font-weight: 600;
+    color: black;
+}
+
+.consoles {
+    position: absolute;
+    top: 70%;
+    left: 74%;
+    box-shadow: 1px 1px 1px black;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 120px;
+
+}
+
+#kill {
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    background-color: rgb(67, 67, 168);
+    padding: 5px;
+    color: cornsilk;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#failed {
+    color: black;
+    font-size: 50px;
+}
+
+#kill:hover {
+    background-color: khaki;
+}
+
+.consoles {
+    border-radius: 1em;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(180, 29, 3);
+    border-top: 1em;
+}
+
+.consoles:hover {
+    color: black;
+    background-color: rgb(180, 29, 3);
+}
+
+.blearn {
+    position: absolute;
+    text-decoration: none;
+    cursor: pointer;
+    top: 17%;
+    left: 22%;
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    background-color: rgb(201, 64, 0);
+    border-radius: 1em;
+    padding: 10px;
+}
+
+.blearn:hover {
+    color: whitesmoke;
+
+}
+
+h2 {
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    font-size: 40px;
+    color: rgb(170, 71, 13);
+    background-color: papayawhip;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+h4 {
+    position: absolute;
+    top: 25%;
+    left: 80%;
+    font-size: 100px;
+    color: whitesmoke;
+}
+
+footer {
+    position: absolute;
+    color: white;
+    padding-left: 1000px;
+    font-family: sans-serif;
+    top: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pop {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+
+}
+
+.pop h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.pop .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.pop .close:hover {
+    color: #06D85F;
+}
+
+.pop .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.hello {
+    position: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
