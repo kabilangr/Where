@@ -61,6 +61,7 @@ const WORDS = [
   "cable",
   "cabin",
   "holiday",
+  "Round",
   "lion",
   "stereo",
   "yoga",
@@ -104,7 +105,7 @@ const WORDS = [
   "champion",
   "ink",
   "decade",
-  "pencil",
+  "pencils",
   "delicious",
   "gymnastics",
   "chance",
@@ -175,6 +176,7 @@ const WORDS = [
   "sank",
   "summer",
   "diwali",
+  "Kaput",
   "dew",
   "Fully",
   "video",
@@ -191,6 +193,7 @@ const WORDS = [
   "late",
   "spoil",
   "size",
+  "Keynote",
   "melon",
   "realism",
   "occur",
@@ -205,6 +208,7 @@ const WORDS = [
   "zigzag",
   "echo",
   "enter",
+  "Kiosk",
   "Houses",
   "Xylophone",
   "each",
@@ -221,6 +225,7 @@ const WORDS = [
   "keep",
   "Job",
   "melt",
+  "Gush",
   "vehicle",
   "Distributor",
   "nosy",
@@ -234,22 +239,30 @@ const WORDS = [
   "experiment",
   "land",
   "reason",
+  "event",
   "trumpet",
+  "Grovel",
+  "europe",
   "recorder",
+  "Extol",
+  "essential",
   "sale",
   "veil",
   "Enjoy",
+  "Endeavour",
   "Basic",
   "poll",
   "leaf",
+  "Gamut",
   "imagine",
+  "estimate",
   "village",
   "obtain",
   "huge",
   "Earnest",
   "young",
   "you",
-  "room",
+  "rooms",
   "octagon",
   "EYE",
   "measure",
@@ -257,6 +270,7 @@ const WORDS = [
   "rip",
   "Grandparents",
   "Yard",
+  "Ellipsis",
   "koala",
   "Fisherman",
   "Outport",
@@ -264,7 +278,9 @@ const WORDS = [
   "bloodshed",
   "oats",
   "secure",
+  "Esoteric",
   "unfair",
+  "Embattled",
   "numb",
   "called",
   "zodiac",
@@ -280,6 +296,7 @@ const WORDS = [
   "visitor",
   "pay",
   "deown",
+  "Ebb",
   "Teaching",
   "vase",
   "quarter",
@@ -313,11 +330,13 @@ var s1 = new Audio();
 var s2 = new Audio();
 var s3 = new Audio();
 var s4 = new Audio();
+var lv1 = new Audio();
 sound.src = "sounds/CLICK17C.wav";
 s1.src = "sounds/button-10.wav";
 s2.src = "sounds/BEEP1C.wav";
 s3.src = "sounds/button-4.wav";
 s4.src = "sounds/s6.mp3";
+lv1.scr = "sounds/level.wav";
 var glo_count = 0;
 var glo_countend = 0;
 var glo_w1 = "";
@@ -416,6 +435,7 @@ function pick(arr) {
 function wordclick(word1, word2) {
   var l = word1.charAt(word1.length - 1);
   var k = word2.charAt(0);
+
   if (word1.toUpperCase() == word2.toUpperCase() && glo_count == 1) {
     console.log("true1 " + word1 + " " + word2);
     glo_w1 = glo_w2;
@@ -435,13 +455,14 @@ function buttoncolor(word, lim) {
   glo_count = glo_count + 1;
   glo_w2 = word.toUpperCase();
   console.log(glo_w1 + " " + glo_w2 + " " + glo_count + " " + glo_correct);
+  document.getElementById("timer1").innerHTML = `<p>${glo_count}</P>`;
   if (wordclick(glo_w1, glo_w2) && glo_count <= lim) {
     glo_correct = glo_correct + 1;
     sound.play();
     console.log(glo_count + " " + glo_correct + " " + lim);
   } else if (glo_count > lim) {
     console.log(lim + 5);
-    sound.play();
+
     startfun(lim + 5);
   } else {
     s4.play();
@@ -463,6 +484,7 @@ function levelinc(l) {
 //this starts the game
 function startfun(limit) {
   var l1 = limit;
+  lv1.play();
   document.getElementById(
     "add"
   ).innerHTML = `<button id="kill">Restart</button>`;
