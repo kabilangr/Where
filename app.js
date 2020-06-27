@@ -221,6 +221,7 @@ const WORDS = [
   "hero",
   "obvious",
   "rude",
+  "warb",
   "hotel",
   "keep",
   "Job",
@@ -238,13 +239,16 @@ const WORDS = [
   "rein",
   "experiment",
   "land",
+  "enormous",
   "reason",
   "event",
   "trumpet",
   "Grovel",
   "europe",
   "recorder",
+  "walkies",
   "Extol",
+  "enlock",
   "essential",
   "sale",
   "veil",
@@ -282,6 +286,7 @@ const WORDS = [
   "unfair",
   "Embattled",
   "numb",
+  "evolutionist",
   "called",
   "zodiac",
   "nephew",
@@ -291,14 +296,18 @@ const WORDS = [
   "relese",
   "President",
   "niece",
+  "elbow",
+  "enfeoff",
   "unemployment",
   "nudge",
   "visitor",
   "pay",
+  "website",
   "deown",
   "Ebb",
   "Teaching",
   "vase",
+  "web",
   "quarter",
   "wand",
   "undo",
@@ -462,15 +471,18 @@ function buttoncolor(word, lim) {
     console.log(glo_count + " " + glo_correct + " " + lim);
   } else if (glo_count > lim) {
     console.log(lim + 5);
-
+    document.getElementById("timer1").innerHTML = ``;
     startfun(lim + 5);
   } else {
     s4.play();
+    glo_count = 0;
+    glo_correct = 0;
     while (lim > 5) {
       document.getElementById("lvl" + Math.ceil(lim / 5)).style.color =
         "rgb(132, 255, 255)";
       lim = lim - 1;
     }
+    document.getElementById("timer1").innerHTML = ``;
     startfun(5);
   }
 }
@@ -490,11 +502,9 @@ function startfun(limit) {
   ).innerHTML = `<button id="kill">Restart</button>`;
   document.getElementById("kill").onclick = function () {
     s4.play();
-    while (l1 > 5) {
-      document.getElementById("lvl" + Math.ceil(l1 / 5)).style.color =
-        "rgb(132, 255, 255)";
-      l1 = l1 - 1;
-    }
+    glo_count = 0;
+    glo_correct = 0;
+    cle();
     startfun(5);
   };
   var a = [];
@@ -602,6 +612,12 @@ function startfun(limit) {
   document.getElementById(a[29].toUpperCase()).onclick = function () {
     buttoncolor(a[29], glo_countend);
   };
+}
+
+function cle() {
+  for (var i1 = 2; i1 <= 6; i1++) {
+    document.getElementById("lvl" + i1).style.color = "rgb(132, 255, 255)";
+  }
 }
 //display and start
 window.onload = () => {
