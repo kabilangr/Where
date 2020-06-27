@@ -507,7 +507,7 @@ function buttoncolor(word, lim) {
   }
 }
 function levelinc(l) {
-  var l;
+  console.log(l / 5);
   document.getElementById("lvl" + Math.floor(l / 5)).style.color = "red";
   if (l > 5)
     document.getElementById("lvl" + Math.floor((l - 5) / 5)).style.color =
@@ -516,7 +516,6 @@ function levelinc(l) {
 //this starts the game
 function startfun(limit) {
   var l1 = limit;
-  lv1.play();
   document.getElementById(
     "add"
   ).innerHTML = `<button id="kill">Restart</button>`;
@@ -524,13 +523,13 @@ function startfun(limit) {
     s4.play();
     glo_count = 0;
     glo_correct = 0;
-    cle();
     startfun(5);
   };
   var a = [];
   var firstword;
   glo_count = 0;
   glo_correct = 0;
+
   levelinc(limit);
   glo_countend = limit;
   var previousword;
