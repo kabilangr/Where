@@ -257,6 +257,7 @@ const WORDS = [
   "Basic",
   "poll",
   "leaf",
+  "eventually",
   "Gamut",
   "imagine",
   "estimate",
@@ -274,14 +275,19 @@ const WORDS = [
   "Morgan",
   "rip",
   "Grandparents",
+  "ealdorman",
+  "millicoulomb",
   "Yard",
   "Ellipsis",
   "koala",
   "Fisherman",
+  "ears",
+  "eagerness",
   "Outport",
   "yell",
   "bloodshed",
   "oats",
+  "nada",
   "secure",
   "Esoteric",
   "unfair",
@@ -289,13 +295,18 @@ const WORDS = [
   "numb",
   "evolutionist",
   "called",
+  "eavesdropping",
   "zodiac",
+  "ardeb",
   "earliest",
   "nephew",
   "Ramification",
+  "nab",
   "Surgery",
+  "earthenware",
   "presidency",
   "Eavesdrop",
+  "earningses",
   "relese",
   "President",
   "Rift",
@@ -303,16 +314,19 @@ const WORDS = [
   "elbow",
   "enfeoff",
   "unemployment",
+  "statcoulomb",
   "nudge",
   "visitor",
   "pay",
   "website",
+  "ecclesiastical",
   "deown",
   "Ebb",
   "Rakish",
   "Teaching",
   "vase",
   "web",
+  "thingamabob",
   "quarter",
   "wand",
   "undo",
@@ -432,7 +446,7 @@ function pick(arr) {
   // var arr = removerepeat(arr);
   console.log(arr);
   for (var i = 0; i < arr.length - 1; i++) {
-    for (var j = 0; j < arr.length; j++) {
+    for (var j = i; j < arr.length; j++) {
       l = arr[i].charAt(arr[i].length - 1);
       l1 = arr[j].charAt(0);
       if (l.toUpperCase() == l1 || l.toLowerCase() == l1) {
@@ -496,7 +510,7 @@ function levelinc(l) {
   var l;
   document.getElementById("lvl" + Math.ceil(l / 5)).style.color = "red";
   if (l > 5)
-    document.getElementById("lvl" + Math.ceil((l - 5) / 5)).style.color =
+    document.getElementById("lvl" + Math.floor((l - 5) / 5)).style.color =
       "black";
 }
 //this starts the game
@@ -620,11 +634,6 @@ function startfun(limit) {
   };
 }
 
-function cle() {
-  for (var i1 = 2; i1 <= 6; i1++) {
-    document.getElementById("lvl" + i1).style.color = "rgb(132, 255, 255)";
-  }
-}
 //display and start
 window.onload = () => {
   document.getElementById("strt").onclick = function () {

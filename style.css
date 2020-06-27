@@ -12,7 +12,7 @@ body {
 
 .heading1 {
 
-    color: rgb(235, 212, 235);
+    color: rgb(219, 198, 219);
     padding-left: 200px;
     font-size: 50px;
 }
@@ -79,7 +79,7 @@ button:hover {
 .consoles {
     position: absolute;
     top: 70%;
-    left: 74%;
+    left: 75%;
     box-shadow: 1px 1px 1px black;
     transform: translate(-50%, -50%);
     display: grid;
@@ -90,7 +90,7 @@ button:hover {
 #kill {
     position: absolute;
     top: 70%;
-    left: 55%;
+    left: 60%;
     background-color: rgb(67, 67, 168);
     padding: 5px;
     color: cornsilk;
@@ -142,10 +142,10 @@ button:hover {
 h2 {
     position: absolute;
     top: 25%;
-    left: 60%;
+    left: 59.4%;
     font-size: 40px;
-    color: rgb(170, 71, 13);
-    background-color: papayawhip;
+    color: rgb(138, 58, 13);
+    /* background-color: papayawhip; */
     border-radius: 10px;
     padding: 4px;
 }
@@ -153,8 +153,8 @@ h2 {
 h4 {
     position: absolute;
     top: 25%;
-    left: 80%;
-    font-size: 100px;
+    left: 50%;
+    font-size: 50px;
     color: whitesmoke;
 }
 
@@ -209,7 +209,7 @@ footer {
 }
 
 .pop .close:hover {
-    color: #06D85F;
+    color: #06d8d8;
 }
 
 .pop .content {
@@ -232,4 +232,22 @@ footer {
 .tryto {
     text-align: center;
     font-size: 25px;
+}
+
+.bac {
+    margin-right: 110px;
+    margin-left: 800px;
+    background-image: url("./assets/photo-1521193089946-7aa29d1fe776.jpg");
+    position: static;
+    background-color: rgb(165, 165, 250);
+    padding-top: 500px;
+    padding-right: 100px;
+    border-radius: 5px;
+}
+
+.time {
+    color: black;
+    margin-top: 100px;
+    margin-left: 300px;
+    padding-left: 10px;
 }
