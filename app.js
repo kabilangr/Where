@@ -498,7 +498,7 @@ function buttoncolor(word, lim) {
     glo_count = 0;
     glo_correct = 0;
     while (lim > 5) {
-      document.getElementById("lvl" + Math.ceil(lim / 5)).style.color =
+      document.getElementById("lvl" + Math.floor(lim / 5)).style.color =
         "rgb(132, 255, 255)";
       lim = lim - 1;
     }
@@ -508,7 +508,7 @@ function buttoncolor(word, lim) {
 }
 function levelinc(l) {
   var l;
-  document.getElementById("lvl" + Math.ceil(l / 5)).style.color = "red";
+  document.getElementById("lvl" + Math.floor(l / 5)).style.color = "red";
   if (l > 5)
     document.getElementById("lvl" + Math.floor((l - 5) / 5)).style.color =
       "black";
