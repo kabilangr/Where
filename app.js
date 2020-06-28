@@ -529,7 +529,6 @@ function startfun(limit) {
   var firstword;
   glo_count = 0;
   glo_correct = 0;
-
   levelinc(limit);
   glo_countend = limit;
   var previousword;
