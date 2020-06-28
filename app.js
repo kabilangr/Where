@@ -295,7 +295,7 @@ const WORDS = [
   "numb",
   "evolutionist",
   "called",
-  "eavesdropping",
+  "eavesdrop",
   "zodiac",
   "ardeb",
   "earliest",
