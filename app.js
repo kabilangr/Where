@@ -636,6 +636,7 @@ function remo(n) {
   for (var i = 1; i <= n; i++) {
     document.getElementById("lvl" + i).style.color = "rgb(132, 255, 255)";
   }
+  document.getElementById("timer1").innerHTML = ``;
 }
 //display and start
 window.onload = () => {
