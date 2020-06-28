@@ -633,7 +633,7 @@ function startfun(limit) {
   };
 }
 function remo(n) {
-  for (var i = 2; i < n; i++) {
+  for (var i = 1; i <= n; i++) {
     document.getElementById("lvl" + i).style.color = "rgb(132, 255, 255)";
   }
 }
