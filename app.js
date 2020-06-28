@@ -523,6 +523,7 @@ function startfun(limit) {
     s4.play();
     glo_count = 0;
     glo_correct = 0;
+    remo(6);
     startfun(5);
   };
   var a = [];
@@ -631,7 +632,11 @@ function startfun(limit) {
     buttoncolor(a[29], glo_countend);
   };
 }
-
+function remo(n) {
+  for (var i = 2; i < n; i++) {
+    document.getElementById("lvl" + i).style.color = "rgb(132, 255, 255)";
+  }
+}
 //display and start
 window.onload = () => {
   document.getElementById("strt").onclick = function () {
