@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Germania+One&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url(./assets/d9ce03995fb1c446-the-gallery-for-animated-smoke-effect.gif);
-    background-size: 1750px;
-    font-family: 'Nunito Sans', sans-serif;
-
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/bokeh-cover-bg.jpg);
+  background-size: 1750px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .heading1 {
-
-    color: rgb(219, 198, 219);
-    padding-left: 450px;
-    font-size: 50px;
+  color: rgb(219, 198, 219);
+  padding-left: 450px;
+  font-size: 50px;
 }
 
 /* 
@@ -27,229 +25,212 @@ body {
 } */
 
 .lvl ul {
-    position: absolute;
-    display: flex;
-    color: rgb(132, 255, 255);
-    font-weight: 600;
-    top: 25%;
-    left: 60%;
-
+  position: absolute;
+  display: flex;
+  color: rgb(132, 255, 255);
+  font-weight: 600;
+  top: 25%;
+  left: 60%;
 }
 
 .lvl ul li {
-    padding: 10px;
-    list-style: none;
-    background-color: rgb(78, 54, 54);
+  padding: 10px;
+  list-style: none;
+  /* background-color: rgb(78, 54, 54); */
 }
 
 .lvl ul:first-child {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .borderbox {
-    position: absolute;
-    top: 60%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    padding: 15px;
-    background-color: rgb(139, 54, 68);
+  position: absolute;
+  margin-top: 250px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: rgb(139, 54, 68);
 }
 
 button {
-    background-color: silver;
+  background-color: silver;
 }
 
 button:hover {
-    background-color: skyblue;
-    cursor: pointer;
+  background-color: skyblue;
+  cursor: pointer;
 }
 
 .maincontent {
-    display: grid;
-    grid-template-columns: 120px 120px 120px 120px 120px;
-    grid-template-rows: 60px 60px 60px 60px 60px 60px;
-    background-color: royalblue;
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px 120px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px;
+  background-color: royalblue;
 }
 
 .maincontent button {
-    font-weight: 800;
-    color: black;
+  font-weight: 800;
+  color: black;
 }
 
 .consoles {
-    position: absolute;
-    top: 70%;
-    left: 75%;
-    box-shadow: 1px 1px 1px black;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: 120px;
-
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 1000px;
+  box-shadow: 1px 1px 1px black;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 120px;
 }
 
 #kill {
-    position: absolute;
-    top: 65%;
-    left: 59%;
-    background-color: rgb(67, 67, 168);
-    padding: 20px;
-    color: cornsilk;
-    font-weight: 600;
-    border-radius: 1em;
-    font-size: 30px;
+  position: absolute;
+  margin-top: 275px;
+  margin-left: 755px;
+  background-color: rgb(67, 67, 168);
+  padding: 20px;
+  color: cornsilk;
+  font-weight: 600;
+  border-radius: 1em;
+  font-size: 30px;
 }
 
 #failed {
-    color: black;
-    font-size: 50px;
+  color: black;
+  font-size: 50px;
 }
 
 #kill:hover {
-    background-color: khaki;
+  background-color: khaki;
 }
 
 .consoles {
-    border-radius: 1em;
-    font-size: 30px;
-    color: white;
-    background-color: rgb(180, 29, 3);
-    border-top: 1em;
+  border-radius: 1em;
+  font-size: 30px;
+  color: white;
+  background-color: rgb(180, 29, 3);
+  border-top: 1em;
 }
 
 .consoles:hover {
-    color: black;
-    background-color: rgb(180, 29, 3);
+  color: black;
+  background-color: rgb(180, 29, 3);
 }
 
 .blearn {
-    position: absolute;
-    text-decoration: none;
-    cursor: pointer;
-    top: 17%;
-    left: 42%;
-    font-size: 30px;
-    font-weight: 800;
-    color: black;
-    background-color: rgb(201, 64, 0);
-    border-radius: 1em;
-    padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 550px;
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  background-color: rgb(201, 64, 0);
+  border-radius: 1em;
+  padding: 10px;
 }
 
 .blearn:hover {
-    color: whitesmoke;
-
+  color: whitesmoke;
 }
 
 h2 {
-    position: absolute;
-    top: 30%;
-    left: 59.4%;
-    font-size: 40px;
-    color: rgb(138, 58, 13);
-    /* background-color: papayawhip; */
-    border-radius: 10px;
-    padding: 4px;
+  position: absolute;
+  top: 30%;
+  left: 59.4%;
+  font-size: 40px;
+  color: rgb(138, 58, 13);
+  /* background-color: papayawhip; */
+  border-radius: 10px;
+  padding: 4px;
 }
 
 h4 {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    font-size: 50px;
-    color: whitesmoke;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-size: 50px;
+  color: whitesmoke;
 }
 
 footer {
-    position: absolute;
-    color: white;
-    padding-left: 1000px;
-    font-family: sans-serif;
-    top: 100%;
+  position: absolute;
+  color: white;
+  padding-left: 1000px;
+  font-family: sans-serif;
+  top: 100%;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    visibility: hidden;
-    opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
 }
 
 .overlay:target {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .pop {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
 }
 
 .pop h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
 }
 
 .pop .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
 }
 
 .pop .close:hover {
-    color: #06d8d8;
+  color: #06d8d8;
 }
 
 .pop .content {
-    max-height: 30%;
-    overflow: auto;
+  max-height: 30%;
+  overflow: auto;
 }
 
 .hello {
-    position: inherit;
-    padding: 0;
-    margin: 0;
-    font-size: 30px;
+  position: inherit;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
 }
 
 .luck {
-    font-size: 30px;
-    text-align: center;
+  font-size: 30px;
+  text-align: center;
 }
 
 .tryto {
-    text-align: center;
-    font-size: 25px;
-}
-
-.bac {
-    margin-right: 110px;
-    margin-left: 800px;
-    margin-top: 100px;
-    background-image: url("./assets/photo-1521193089946-7aa29d1fe776.jpg");
-    position: static;
-    background-color: rgb(165, 165, 250);
-    padding-top: 350px;
-    padding-right: 100px;
-    border-radius: 5px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .time {
-    color: black;
-    margin-top: 100px;
-    margin-left: 300px;
-    padding-left: 10px;
+  color: lavenderblush;
+  margin-top: 100px;
+  margin-left: 300px;
+  padding-left: 10px;
 }

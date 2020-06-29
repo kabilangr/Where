@@ -346,6 +346,7 @@ const WORDS = [
   "Formula",
   "Kinship",
 ];
+//to remove the repeated words
 function removerepeat(arr) {
   var l = arr.reduce(function (a, b) {
     if (a.indexOf(b) < 0) a.push(b);
@@ -353,6 +354,7 @@ function removerepeat(arr) {
   }, []);
   return l;
 }
+//sounds for the game is declared
 var sound = new Audio();
 var s1 = new Audio();
 var s2 = new Audio();
@@ -437,6 +439,7 @@ function reduceArray(arr, k) {
 const worddis = (wooo) => {
   document.getElementById("wordfun").innerHTML = `<h2>Words: ${wooo}</h2>`;
 };
+//making the sequencce
 function pick(arr) {
   var a = [];
   var l = "";
@@ -505,6 +508,7 @@ function buttoncolor(word, lim) {
     startfun(5);
   }
 }
+
 function levelinc(l) {
   console.log(l / 5);
   document.getElementById("lvl" + Math.floor(l / 5)).style.color = "red";
@@ -631,6 +635,7 @@ function startfun(limit) {
     buttoncolor(a[29], glo_countend);
   };
 }
+
 function remo(n) {
   for (var i = 1; i <= n; i++) {
     document.getElementById("lvl" + i).style.color = "rgb(132, 255, 255)";
