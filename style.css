@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(./assets/bokeh-cover-bg.jpg);
+  background-image: url(./assets/abstract-technology-particle-background_52683-25766.jpg);
   background-size: 1750px;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -136,8 +136,8 @@ button:hover {
 
 h2 {
   position: absolute;
-  top: 30%;
-  left: 59.4%;
+  margin-top: 100px;
+  margin-left: 900px;
   font-size: 40px;
   color: rgb(138, 58, 13);
   /* background-color: papayawhip; */
