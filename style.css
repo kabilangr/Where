@@ -5,38 +5,40 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(./assets/abstract-technology-particle-background_52683-25766.jpg);
-  background-size: 1750px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
   font-family: "Nunito Sans", sans-serif;
 }
 
 .heading1 {
   color: rgb(219, 198, 219);
-  padding-left: 450px;
+  text-align: center;
   font-size: 50px;
 }
 
-/* 
-.outerb {
-    position: absolute;
-    background-color: white;
-    top: 15%;
-    left: 50%;
-    padding: 300px;
-} */
 
 .lvl ul {
-  position: absolute;
+
   display: flex;
   color: rgb(132, 255, 255);
   font-weight: 600;
-  top: 25%;
-  left: 60%;
 }
+.lvl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+.outerb{
+  display:flex;
+  justify-content: center;
+}
 .lvl ul li {
   padding: 10px;
   list-style: none;
-  /* background-color: rgb(78, 54, 54); */
+  
 }
 
 .lvl ul:first-child {
@@ -44,10 +46,7 @@ body {
 }
 
 .borderbox {
-  position: absolute;
-  margin-top: 250px;
-  left: 30%;
-  transform: translate(-50%, -50%);
+padding-left: 20px;
   padding: 15px;
   background-color: rgb(139, 54, 68);
 }
@@ -74,19 +73,12 @@ button:hover {
 }
 
 .consoles {
-  position: absolute;
-  margin-top: 300px;
-  margin-left: 1000px;
   box-shadow: 1px 1px 1px black;
-  transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: 120px;
 }
 
 #kill {
-  position: absolute;
-  margin-top: 275px;
-  margin-left: 755px;
   background-color: rgb(67, 67, 168);
   padding: 20px;
   color: cornsilk;
@@ -116,18 +108,25 @@ button:hover {
   color: black;
   background-color: rgb(180, 29, 3);
 }
+.start{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.blearn {
+}
+.blearn{
   text-decoration: none;
+
+}
+.blearn p{
+
   cursor: pointer;
-  margin-top: 10px;
-  margin-left: 550px;
   font-size: 30px;
   font-weight: 800;
   color: black;
   background-color: rgb(201, 64, 0);
   border-radius: 1em;
-  padding: 10px;
+  padding: 15px;
 }
 
 .blearn:hover {
@@ -135,12 +134,8 @@ button:hover {
 }
 
 h2 {
-  position: absolute;
-  margin-top: 100px;
-  margin-left: 900px;
   font-size: 40px;
   color: rgb(138, 58, 13);
-  /* background-color: papayawhip; */
   border-radius: 10px;
   padding: 4px;
 }
@@ -230,7 +225,5 @@ footer {
 
 .time {
   color: lavenderblush;
-  margin-top: 100px;
-  margin-left: 300px;
-  padding-left: 10px;
+
 }
