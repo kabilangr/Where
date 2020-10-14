@@ -18,7 +18,6 @@ body {
   font-size: 50px;
 }
 
-
 .lvl ul {
 
   display: flex;
@@ -46,7 +45,7 @@ body {
 }
 
 .borderbox {
-padding-left: 20px;
+
   padding: 15px;
   background-color: rgb(139, 54, 68);
 }
@@ -137,13 +136,11 @@ h2 {
   font-size: 40px;
   color: rgb(138, 58, 13);
   border-radius: 10px;
-  padding: 4px;
+  margin: 0;
 }
 
 h4 {
-  position: absolute;
-  top: 25%;
-  left: 50%;
+  margin:0;
   font-size: 50px;
   color: whitesmoke;
 }
@@ -222,8 +219,7 @@ footer {
   text-align: center;
   font-size: 25px;
 }
-
-.time {
-  color: lavenderblush;
-
+.time p{
+margin: 0;
 }
+
