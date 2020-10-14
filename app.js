@@ -508,7 +508,7 @@ function buttoncolor(word, lim) {
     startfun(5);
   }
 }
-
+// level
 function levelinc(l) {
   console.log(l / 5);
   document.getElementById("lvl" + Math.floor(l / 5)).style.color = "red";
