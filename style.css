@@ -144,12 +144,11 @@ h4 {
   font-size: 50px;
   color: whitesmoke;
 }
-/* name */
 footer {
   position: absolute;
   color: white;
   font-family: sans-serif;
-  top: 100%;
+  top: 95%;
 }
 
 .overlay {
